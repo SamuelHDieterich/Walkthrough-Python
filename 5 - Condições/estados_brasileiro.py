@@ -11,8 +11,8 @@ estados = frozenset({
 
 # Entrada do usuário
 resposta = str(input('Digite a sigla de um estado brasileiro: '))
-resposta.upper()            # Coloca o texto em maísculo
-resposta.replace(" ","")    # Tira os espaços em branco
+resposta = resposta.upper()            # Coloca o texto em maísculo
+resposta = resposta.replace(" ","")    # Tira os espaços em branco
 
 # Verifica se a entrada do usuário está no conjunto
 if resposta in estados:
